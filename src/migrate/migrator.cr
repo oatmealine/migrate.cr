@@ -10,7 +10,7 @@ module Migrate
 
     def initialize(
       @db : DB::Database,
-      @logger : Log? = Log.for("migrator"),
+      @logger : Log = Log.for("migrator"),
       @dir : String = File.join("db", "migrations"),
       @table : String = "version",
       @column : String = "version"
