@@ -15,7 +15,7 @@ describe Migrate::Migrator do
 
   migrator = Migrate::Migrator.new(
     db,
-    Logger.new(STDOUT).tap(&.level = Logger::DEBUG),
+    nil,
     File.join("spec", "migrations")
   )
 
