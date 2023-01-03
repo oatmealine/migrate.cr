@@ -12,7 +12,6 @@ license: MIT
 dependencies:
   db:
     github: crystal-lang/crystal-db
-    branch: master
   time_format:
     github: vladfaust/time_format.cr
     version: ~> 0.1.0
